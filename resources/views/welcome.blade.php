@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/simple.min.css">
+@extends('base')
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+@section('main')
+    Hello world! <br>
 
-        @fonts
-    </head>
-    <body>
-        <header>
-            Hi
-        </header>
-        <main>
-            Hello world!
-
-            <a>Products list</a>
-        </main>
-    </body>
-</html>
+    <a href="{{ route('login-screen') }}">Login?</a>
+@endsection
